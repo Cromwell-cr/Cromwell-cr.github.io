@@ -1,10 +1,10 @@
 
 body {
-    background: #25274d;
+    background: var(--primary-color-);
 }
 
 header {
-    background: #25274d;
+    background: var(--primary-color-);
     padding: 1rem;
     border-bottom: 10px solid red;
     height: 2rem;
@@ -17,7 +17,7 @@ li {
 }
 li a{
     font-size: large;
-    color: white;
+    color: var(--third-color-);
     padding-right: 1rem;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -31,6 +31,23 @@ li a:hover{
 
 li a:active{
     color: orange;
+}
+
+:root{
+    --primary-color-: #25274d;
+    --secondary-color-: #1f2833;
+    --third-color-: white;
+}
+
+.light-theme{
+    --primary-color-: #fffffff3;
+    --secondary-color-: #d7d7d7;
+    --third-color-: #f76c6c;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
 }
 
 #about {
@@ -52,15 +69,15 @@ li a:active{
     /*border: 5px solid rgb(221, 125, 229); */
     border-radius: 20px;
     text-align: center;
-    background: #1f2833;
-    color: white;
+    background: var(--secondary-color-);
+    color: var(--third-color-);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 1rem;
 }
 
 
 #about > .about__ilustration {
-    background-image: linear-gradient(289deg, #f76c6c 20%, #25274d 80%);
+    background-image: linear-gradient(289deg, #f76c6c 20%, var(--primary-color-) 80%);
    /* border: 5px solid rgb(179, 55, 55);*/
     text-align: center;
     align-self:center;
@@ -69,7 +86,7 @@ li a:active{
 
   
 #skills {
-    color: aliceblue;
+    color: white;
     display: grid;
     grid-gap: 20px 50px;
     text-align: center;
@@ -91,7 +108,7 @@ li a:active{
 
 #skills > .h1, .html, .css, .js, .python, .django, .flask, .mysql {
 
-    border: 5px solid rgb(179, 55, 55);
+    border: 5px solid rgb(215, 55, 55);
 }
 
 .h1 {
@@ -100,11 +117,11 @@ li a:active{
 }
 
 .html, .css, .js, .python, .django, .flask, .mysql{
-    background-color: #1f2833;
+    background-color: var(--secondary-color-);
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 5%;
-    color: white;
+    color: var(--third-color-);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -156,7 +173,7 @@ li a:active{
 .education {
     grid-column: 1/3;
     background-color: #f76c6c;
-    color: white;
+    color: var(--third-color-);
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -165,9 +182,9 @@ h1{
     width: 100%;
 }
 .uned, .academia, .alura, .ucr{
-    background-color: #1f2833;
+    background-color: var(--secondary-color-);
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-    color: white;
+    color: var(--third-color-);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -188,9 +205,9 @@ h1{
 }
 
 #contact__conteiner > .contact, .linkedin, .email, .phone, .github {
-    background-color: #1f2833;
+    background-color: var(--secondary-color-);
     /*border: 5px solid rgb(8, 4, 252);*/
-    color: white;
+    color: var(--third-color-);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -215,13 +232,13 @@ h1{
 }
 
 #contact__conteiner a{ 
-    color: white;
+    color: var(--third-color-);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
 .linkedin, .email, .phone, .github{
-    color: white;
+    color: var(--third-color-);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     border-radius: 100px;
     box-shadow: inset 20px 20px 39px #070a10, inset -20px -20px 39px#1b263e;
@@ -236,7 +253,7 @@ h1{
   }
 
 footer{
-    background: #1f2833;
+    background: var(--secondary-color-);
     text-align: center;
     width: 100%;
     height: auto;
@@ -244,7 +261,7 @@ footer{
 }
 .footer{
     /*border: 5px solid rgb(92, 92, 92);*/
-    color: white;
+    color: var(--third-color-);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: small;
 }
@@ -252,7 +269,7 @@ footer{
 .footer__img{
     position: relative;
     text-align: left;
-    color: white;
+    color: var(--third-color-);
 }
 
 .fondo{
